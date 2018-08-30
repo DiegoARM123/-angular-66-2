@@ -37,4 +37,8 @@ export class ListaEventosComponent implements OnInit {
   ngOnInit() {
   }
 
+  manejarClick(){
+    console.log("click en el boton");
+  }
+
 }
