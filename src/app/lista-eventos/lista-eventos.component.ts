@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Evento } from '../models/evento';
 
 @Component({
   selector: 'app-lista-eventos',
@@ -8,23 +9,27 @@ import { Component, OnInit } from '@angular/core';
 export class ListaEventosComponent implements OnInit {
 
 
-  eventos = [
+  eventos:Evento[] = [
     {
       nombre: "Connferencia angular",
-      ciudad: 'Bogota'
+      ciudad: 'Bogota',
+      descripcion: "Angular 7"
     },
     {
       nombre: "Connferencia react",
-      ciudad: 'Bogota'
+      ciudad: 'Bogota',
+      descripcion: "Angular vs Reac"
     },
     {
       nombre: "Connferencia ionic",
-      ciudad: 'Bogota'
+      ciudad: 'Bogota',
+      descripcion: "Componentes web en ionic"
     }
     ,
     {
-      nombre: "Connferencia ionic",
-      ciudad: 'Bogota'
+      nombre: "ionic vs flutter",
+      ciudad: 'Bogota',
+      descripcion: "hibrido vs Nativo"
     }
   ];
   constructor() { }
