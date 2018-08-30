@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ListaEventosComponent } from './lista-eventos/lista-eventos.component';
 import { EventoService } from './evento.service';
+import { DetalleEventoComponent } from './detalle-evento/detalle-evento.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EventoService } from './evento.service';
     AppComponent,
     NavComponent,
     NavegacionComponent,
-    ListaEventosComponent
+    ListaEventosComponent,
+    DetalleEventoComponent
   ],
   imports: [
     BrowserModule,
